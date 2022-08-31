@@ -275,6 +275,10 @@ a {
     height: 35px;    
 }
 
+.btn-cadastro:hover {
+    background-color: #173c41;;
+}
+
 .equipments-section {
     background-color: rgb(255, 255, 255);
     min-height: 610px;
@@ -441,6 +445,11 @@ h1 {
     border-radius: 8px;
     width: 140px;
     height: 35px;      
+}
+
+.more-btn:hover { 
+    color: #173c41;
+    border: 1px solid #173c41; 
 }
 
 .rules-section {    
