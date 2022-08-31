@@ -443,8 +443,8 @@ h1 {
     height: 35px;      
 }
 
-.rules-section {
-    background-color: #eaeaea;
+.rules-section {    
+    background: radial-gradient(circle at top, #effeff , #ebebeb);
     min-height: 500px;
 }
 
