@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipamentos Cadastrados</title>
+    <title>Cadastro de Equipamentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/reset.css">
@@ -20,98 +20,66 @@
                 <div class="col">
                     <h5>Cadastrar</h5>
                     <br>
-                    <form>
+                    <form id="form-adiciona">
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Patrimônio</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="equipamento" class="form-label">Equipamento</label>
+                            <input type="text" name="equipamento" class="form-control" id="input-equipamentos">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Patrimônio</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="patrimonio" class="form-label">Patrimônio</label>
+                            <input type="number" name="patrimonio" class="form-control" id="input-number">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Data de retirada</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="retirada" class="form-label">Data de retirada</label>
+                            <input type="date"name="data" class="form-control" id="input-date">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Local de retirada</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="local" class="form-label">Local de retirada</label>
+                            <input type="text" name="local" class="form-control" id="input-local">
                         </div>
-                        <button type="submit" class="btn btn-primary">Adicionar</button>
+                        <button type="submit" class="btn" id="adicionar-equipamento">Adicionar</button>
                     </form>
                 </div>
 
                 <div class="col text-center">
                     <h5>Equipamentos Cadastrados</h5>
-                    <div class="container text-center">
-                        <div class="row row-cols-8 row-cols-lg-3 g-2 g-lg-3">
-                            <div class="col">
-                                <div class="p-3 border bg-light">
-                                    <p>Equipamento</p>
-                                    <p>#Patrimônio</p>
-                                    <p>Retirado em:</p>
-                                    <p>Dia/Mês/Ano</p>
-                                </div>
-                            </div>
+                    <br>
+                    <br>
 
-                            <div class="col">
-                                <div class="p-3 border bg-light">
-                                    <p>Equipamento</p>
-                                    <p>#Patrimônio</p>
-                                    <p>Retirado em:</p>
-                                    <p>Dia/Mês/Ano</p>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="p-3 border bg-light">
-                                    <p>Equipamento</p>
-                                    <p>#Patrimônio</p>
-                                    <p>Retirado em:</p>
-                                    <p>Dia/Mês/Ano</p>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="p-3 border bg-light">
-                                    <p>Equipamento</p>
-                                    <p>#Patrimônio</p>
-                                    <p>Retirado em:</p>
-                                    <p>Dia/Mês/Ano</p>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="p-3 border bg-light">
-                                    <p>Equipamento</p>
-                                    <p>#Patrimônio</p>
-                                    <p>Retirado em:</p>
-                                    <p>Dia/Mês/Ano</p>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="p-3 border bg-light">
-                                    <p>Equipamento</p>
-                                    <p>#Patrimônio</p>
-                                    <p>Retirado em:</p>
-                                    <p>Dia/Mês/Ano</p>
-                                </div>
-                            </div>                                                                              
-                        </div>
-                    </div>
+                    <table class="table table-bordered border-primary">
+                        <thead>
+                            <tr>                                
+                                <th scope="col">Equipamento</th>
+                                <th scope="col">Patrimônio</th>
+                                <th scope="col">Data de Retirada</th>
+                                <th scope="col">Local de Retirada</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-equipamentos">
+                            <tr class="equipamento">                                
+                                <td class="info-equipamento">Balança</td>
+                                <td class="info-patrimonio">125.150</td>
+                                <td class="info-data">00-00-0000</td>
+                                <td class="info-local">Lab 1</td>
+                            </tr>
+                            <tr class="equipamento">                                
+                                <td class="info-equipamento">Balaclava</td>
+                                <td class="info-patrimonio">125.151</td>
+                                <td class="info-data">00-00-0000</td>
+                                <td class="info-local">Lab 2</td>
+                            </tr>                       
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
+    <script src="../JavaScript/script.js"></script>
 </body>
 
 </html>

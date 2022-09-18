@@ -1,8 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #eaeaea;
+    font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+    color: #44919a;
+}
+
 .container {
     padding-top: 50px;
 }
 
-#exampleInputPassword1 {
+#input-equipamentos, #input-number,
+#input-date, #input-local {
     width: 350px;
+    border: 1px solid #5199a1;
 }
 
+
+.patrimonio {
+    color: #44919a;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #44919a;
+    color: #fff;
+}
